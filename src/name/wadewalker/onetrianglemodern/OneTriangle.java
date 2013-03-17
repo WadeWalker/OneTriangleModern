@@ -140,6 +140,7 @@ public class OneTriangle implements GLEventListener {
      * @param fConst Constant value to assign to every element of the buffer.
      * @return the new buffer.
      */
+    @SuppressWarnings("unused")
     private FloatBuffer createConstFloatTexture( int iWidth, int iHeight, float fConst ) {
 
         ByteBuffer bytebuffer = ByteBuffer.allocateDirect( iWidth * iHeight * 4 * ShaderUtils.siGLFloatBytes );
@@ -167,6 +168,7 @@ public class OneTriangle implements GLEventListener {
      * @param fConst Constant value to assign to every element of the buffer.
      * @return the new buffer.
      */
+    @SuppressWarnings("unused")
     private FloatBuffer createDiagonalFloatTexture( int iWidth, int iHeight, float fConst ) {
 
         ByteBuffer bytebuffer = ByteBuffer.allocateDirect( iWidth * iHeight * 4 * ShaderUtils.siGLFloatBytes );
@@ -200,6 +202,7 @@ public class OneTriangle implements GLEventListener {
      * @param iHeight Height of buffer.
      * @return the new buffer.
      */
+    @SuppressWarnings("unused")
     private ByteBuffer createRandomByteTexture( int iWidth, int iHeight ) {
 
         Random random = new Random();
